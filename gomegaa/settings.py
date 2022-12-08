@@ -42,7 +42,7 @@ EMAIL_HOST_USER ='mondal.laltu199208@gmail.com'
 EMAIL_HOST_PASSWORD = "jclkzzbbqihvytws"
 DEFAULT_FROM_EMAIL = 'Celery <mondal.laltu199208@gmail.com>'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 import os
 
 # Application definition
