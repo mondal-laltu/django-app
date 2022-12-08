@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+{%load static%}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>DITS</title>
+    <script src="https://kit.fontawesome.com/e17ceb6b9c.js" crossorigin="anonymous"></script>
+
+    <style>
+        .content {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .ml {
+            margin-left: 48px;
+        }
+
+        .ml1 {
+            margin-left: 5px;
+        }
+
+        .ml2 {
+            margin-left: 45px
+        }
+
+        .ml3 {
+            margin-left: 52px
+        }
+
+        .ml5 {
+            margin-left: 5px;
+        }
+
+        .ml4 {
+            margin-left: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .footer {
+            height: 27px;
+            width: 63%;
+            margin-left: 4%;
+            padding-top: 3px;
+            border: 1px dashed #2c69a2;
+            text-align: center;
+            border-left-style: none;
+            border-right-style: none;
+        }
+
+        .subheading {
+            margin-left: 28%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* social media icon start here */
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+    <div class="section" style="margin-left: 20%;">
+
+        <div class="header">
+            <img src="https://www.ditsintelligence.com/static/image/logo.png" style="width: 150px;margin-left: 28%;margin-top: 3px;" alt="logo"/>
+        </div>
+        <div class="content">
+            <p>Dear <span style="text-transform: capitalize;font-weight: bold;">{{name}}</span></p>
+            <p>Greetings for the day!</p>
+            <p> We appreciate your interest in our service. Our team expert will call you and explain the details in depth and with our service you can enhance your knowledge.</p>
+            <p>If you have any queries, feel free to contact us through email<a href="mailto:info@ditsintelligenc.com">infgomegga@gmail.com</a>  or through WhatsApp number  +357 99173668 .
+                Regards</p>
+
+            <!-- <p>Name <span style="margin-left:35px">-</span><span style="text-transform: capitalize;">&nbsp;{{name}}</span><br> Email
+                <span style="margin-left:36px">-</span><span style="margin-left:5px">&nbsp;{{email}}</span><br>Contact No&nbsp;
+                <span style="margin-left:1px">-</span><span class="">&nbsp;&nbsp;{{phone_no}}</span>
+            </p> -->
+            
+            <table style="padding:20px">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{name}}</td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{email}}</td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{address}}</td>
+                </tr>
+                <tr>
+                    <td><b>contact_person_name</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{contact_person_name}}</td>
+                </tr>
+
+                <tr>
+                    <td><b>Message</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{message}}</td>
+                </tr>
+                {%if time %}
+                <tr>
+                    <td><b>time</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{time}}</td>
+                </tr>
+                {%endif%}
+                <tr>
+                    <td><b>Contact No</b></td>
+                    <td>.</td>
+                    <td style="padding-left: 10px;">{{mobile_no}}
+            </table>
+        </div><br>
+        <div class="content">
+            <p>Thank You,<br>Gomegaa Team <br> <a href="https://www.divsolution.com/"
+                    target="_blank">www.gomegga.com</a><br>infgomegga@gmail.com</p>
+        </div>
+        <div class="footer">
+            <b>IT IS AN AUTOMATED MAIL - PLEASE DO NOT REPLY</b>
+        </div>
+        <p style="margin-left:4%;font-size:11px;">If you require any further clarification, please do not hesitate to
+            cantact us via email <span style="color:#2675d8"><b>infgomegga@gmail.com</b></span></p>
+        <div class="flex content">
+            <div style="padding-left:25%">
+                <a href="https://www.linkedin.com/in/dits-intelligence-" target="_blank">
+                    <img src="https://welcome.6itrade.com/linkedin/" style="margin-top:3px" />
+                </a>
+                <a href="https://www.facebook.com/DitsIntelligence.fb" target="_blank">
+                    <img src="https://welcome.6itrade.com/fb/" style="margin-top:3px" />
+                </a>
+                <a href=" https://twitter.com/DitsIntelligenc" target="_blank">
+                    <img src="https://welcome.6itrade.com/twiter/" style="margin-top:3px" />
+                </a>
+                <a href="https://www.instagram.com/ditsintelligence/" target="_blank">
+                    <img src="https://welcome.6itrade.com/insta/" style="margin-top:3px" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>
